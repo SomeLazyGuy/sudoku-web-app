@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>My Website</title>
+		<link rel="stylesheet" href="./style.css">
+		<link rel="icon" href="./favicon.ico" type="image/x-icon">
+	</head>
+	<body>
+		<header>
+			<h1>Sudoku</h1>
+		</header>
+		<main>
+			<ul class="difficulty">
+				<li>
+					<input id="easy" checked="true" type="radio" name="difficulty"/>
+					<label for="easy">Easy</label>
+				</li>
+				<li>
+					<input id="medium" type="radio" name="difficulty"/>
+					<label for="medium">Medium</label>
+				</li>
+				<li>
+					<input id="hard" type="radio" name="difficulty"/>
+					<label for="hard">Hard</label>
+				</li>
+			</ul>
+			<sudoku id="sudoku-board">
+			</sudoku>
+		</main>
+		<script src="sudoku.js"></script>
+		<script>
+			initializeBoard();
+		</script>
+	</body>
+</html>

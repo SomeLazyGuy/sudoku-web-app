@@ -1,0 +1,53 @@
+#difficulty-list {
+	list-style-type: none;
+	padding: 0;
+	margon: 0;
+	display: flex;
+	gap: 20px;
+}
+
+sudoku {
+	display: grid;
+	grid-template-columns: 30vw 30vw 30vw;
+	width: 90vw;
+}
+
+.bigGrid {
+	border: 2px solid black;
+	width: 100%;
+	aspect-ratio: 1;
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+
+.smallGrid {
+	border: 1px solid black;
+	width: 100%;
+	aspect-ratio: 1;
+}
+
+ul.difficulty {
+    list-style-type:none;
+    margin: 0;
+    padding:0;
+    border-radius: 5px;
+}
+ul.difficulty li {
+    float: left;
+    padding: 0;
+}
+ul.difficulty li label {
+  background: white;  
+  padding: 6px;
+  border: 1px solid #ccc;
+  display: inline-block;
+}
+ul.difficulty li input[type="radio"] {
+    opacity: 0;
+    width:1px;
+    height:1px;
+}
+ul.difficulty li input[type="radio"]:checked ~ label {
+    background: red;
+    color: white;
+}
